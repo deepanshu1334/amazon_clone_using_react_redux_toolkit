@@ -5,12 +5,13 @@ import { useNavigate, createSearchParams } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 
-
-
-
 const CarouselCategory = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white m-3">
+      <div className="text-2xl font-semibold p-3">
+        Shop By Category 
+      </div>
+
         <Swiper
         slidesPerView={5}
         spaceBetween={10}

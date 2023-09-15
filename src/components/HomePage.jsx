@@ -1,4 +1,6 @@
 import { Carousels, HomePageCard } from "./";
+import CarouselProduct from "./CarouselProduct";
+
 
 import CarouselCategory from "./CarouselCategory";
 const HomePage = () => {
@@ -55,7 +57,7 @@ const HomePage = () => {
             />
           </div>
         </div>
-        {/* <CarouselProduct /> */}
+        <CarouselProduct />
         <CarouselCategory />
         {/* <div className="h-[200px]"> */}
           {/* <img
