@@ -16,6 +16,10 @@ import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 
+// import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+
+
 const CarouselProduct = () => {
   return (
     <div className="bg-white m-3">
@@ -27,15 +31,18 @@ const CarouselProduct = () => {
         // navigation={true}
         // modules={[Navigation]}
       >
-        {/* it will iteratte 9 times */}
+        {/* it will iteratte 9 times , when user click on product page it will redirect to produtct*/}
+     {/* i will track id of produtct */}
         {Array.from({ length: 9 }, (_, i) => (
           <SwiperSlide key={i}>
-            {/* <Link to={`/product/${i}`}> */}
+            <Link to={`/product/${i}`}>
+            {/* <Link to={`/product`}> */}
+            <
               <img
                 src={`../images/product_${i}_small.jpg`}
                 alt="Carousel product"
               />
-            {/* </Link> */}
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

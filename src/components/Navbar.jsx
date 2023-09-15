@@ -1,6 +1,7 @@
 import React from 'react'
 import { ShoppingCartIcon } from "@heroicons/react/24/outline";
 
+import Search from './Search';
 
 const Navbar = () => {
   return (
@@ -24,7 +25,7 @@ const Navbar = () => {
 
            {/* Middle */}
            <div className="flex grow relative items-center">
-          {/* <Search /> */} Middle
+          <Search />
         </div>
 
 
@@ -59,9 +60,7 @@ const Navbar = () => {
         <div>Registry</div>
         <div>Gift Cards</div>
         <div>Sell</div>
-
-
-         </div>
+        </div>
     </header>
   )
 }
