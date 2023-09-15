@@ -59,13 +59,13 @@ const HomePage = () => {
         </div>
         <CarouselProduct />
         <CarouselCategory />
-        {/* <div className="h-[200px]"> */}
-          {/* <img
+        <div className="h-[200px]">
+          <img
             className="h-[100%] m-auto"
             src={"../images/banner_image.jpg"}
             alt="Banner 1"
           />
-        </div> */}
+        </div>
       </div>
     </div>
   );
