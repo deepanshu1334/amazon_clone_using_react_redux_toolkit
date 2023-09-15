@@ -11,10 +11,10 @@ const Carousels = () => {
         loop={true}
         spaceBetween={0}
         navigation={true}
-        // modules={[Navigation, Autoplay]}
-        // autoplay={{
-        //   delay: 4500,
-        // }}
+        modules={[Navigation, Autoplay]}
+        Autoplay={{
+          delay: 4500,
+        }}
         className="h-[50%]"
       >
         <SwiperSlide>
