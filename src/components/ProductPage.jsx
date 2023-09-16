@@ -21,18 +21,11 @@ const ProductPage = () => {
       setProduct(productResults[id]);
   })
 }
-
-
   useEffect(()=>{
     getProduct();
   },[]);
 
   if (!product?.title) return <h1>Loading Product ...</h1>;
-
-
-
-
-
   return ( product && 
     <div className='h-screen bg-amazonclone-background'>
        <div className="min-w-[1000px] max-w-[1500px] m-auto p-4">
@@ -54,7 +47,7 @@ const ProductPage = () => {
 
         {/* Right */}
         <div className="col-span-2 p-4 rounded bg-white">
-              <div className="text-xl xl:text-2xl text-red-700 text-right font-semibold">
+              <div className="text-xl xl:text-2xl text-red-700 text-right font-semibold cursor-pointer">
                 {GB_CURRENCY.format(product.price)}
               </div>
               <div className="text-base xl:text-lg text-gray-500 text-right font-semibold">
@@ -84,16 +77,15 @@ const ProductPage = () => {
                 </select>
               </div>
               <Link to={"/checkout"}>
-                <button
+                <button className="bg-yellow-400 w-full p-3 text-xs xl:text-sm rounded
+                hover:bg-yellow-500 mt-3 "
                   // onClick={() => dispatch(addToCart(addQuantityToProduct()))}
-                  className="btn"
+                
                 >
                   Add to Cart
                 </button>
               </Link>
             </div>
-
-
        </div>
     </div>    
     </div>
