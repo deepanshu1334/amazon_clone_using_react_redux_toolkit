@@ -7,6 +7,8 @@ import "swiper/css/navigation";
 
 const CarouselCategory = () => {
 
+  
+
   const navigate = useNavigate();
   const searchCategory = (category) => {
     navigate({
@@ -32,7 +34,7 @@ const CarouselCategory = () => {
         // modules={[Navigation]}
       >
 
-<SwiperSlide
+     <SwiperSlide
           onClick={() => searchCategory("Deals")}
           className="cursor-pointer"
         >
