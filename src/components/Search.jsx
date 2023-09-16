@@ -27,8 +27,6 @@ const Search = () => {
         </button>
 
         </div>
-
-
     </div>
   )
 }
